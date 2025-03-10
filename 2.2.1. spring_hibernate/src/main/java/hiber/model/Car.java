@@ -4,17 +4,17 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table (name = "car")
+@Table(name = "car")
 public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column ( name = "model")
+    @Column(name = "model")
     private String model;
 
-    @Column ( name = "series")
+    @Column(name = "series")
     private int series;
 
 

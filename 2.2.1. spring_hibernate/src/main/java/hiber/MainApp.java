@@ -41,11 +41,11 @@ public class MainApp {
                     System.out.println("Car = None\n");
                 }
             });
-            User userWithCar = userService.getUserAddCar("KIA", 15);
+            User userWithCar = userService.getUserByCar("KIA", 45);
             if (userWithCar != null) {
                 System.out.println(userWithCar);
             } else {
-                System.out.println("Нет пользователя с такой машиной: "+ userWithCar);
+                System.out.println("Нет пользователя с такой машиной: " + userWithCar);
             }
             // context.close();
         }
